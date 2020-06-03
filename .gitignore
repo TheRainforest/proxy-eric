@@ -1,5 +1,14 @@
+## MAC files ##
+.DS_Store
+
 # node modules
 /node_modules/
 
 # public files
 /public/
+
+#dotenv
+*.env
+
+#New Relic logs
+newrelic_agent.log
