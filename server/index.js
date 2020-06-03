@@ -1,3 +1,6 @@
+require('newrelic');
+require('dotenv').config();
+
 const express = require('express');
 const path = require('path');
 const { createProxyMiddleware } = require('http-proxy-middleware');
@@ -8,7 +11,7 @@ const port = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.use('/api/items/:id', createProxyMiddleware({
-  target: 'http://3.132.5.204:3001/',
+  target: 'http://localhost:3001/',
   changeOrigin: true,
 }));
 
