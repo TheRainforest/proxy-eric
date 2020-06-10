@@ -1,7 +1,7 @@
 {
   "name": "proxy-eric",
   "version": "1.0.0",
-  "description": "Eric's proxy for Amazon Rainforest",
+  "description": "Proxy for Rainforest",
   "main": "server/index.js",
   "scripts": {
     "start": "node server",
